@@ -1,0 +1,107 @@
+/* Reset e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-style: italic;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos títulos h2 e h3 */
+.content h2, .content h3 {
+    position: relative;
+    padding-bottom: 0.3em;
+    font-size: 1.5em; /* Tamanho padrão para títulos */
+    margin-bottom: 1em;
+}
+
+/* Pseudo-elemento para borda inferior */
+.content h2::after, .content h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #4A5D23; /* Cor da borda inferior */
+    transition: width 0.3s ease;
+}
+
+/* Efeito hover para títulos */
+.content h2:hover::after, .content h3:hover::after {
+    width: 100%; /* A borda se estende até o final do texto */
+}
+
+/* Estilo específico para h2 e h3 */
+.content h2 {
+    font-size: 2em; /* Ajusta o tamanho para h2 */
+}
+
+.content h3 {
+    font-size: 1.5em; /* Ajusta o tamanho para h3 */
+}
+
+/* Estilo dos parágrafos */
+.content p {
+    margin-bottom: 1em;
+    line-height: 1.8;
+}
+
+/* Estilo do container da imagem */
+.image-container {
+    text-align: center;
+    margin: 2em 0;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
